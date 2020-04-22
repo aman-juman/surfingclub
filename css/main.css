@@ -1,0 +1,9 @@
+/*font-family: 'Fira Sans', sans-serif;*/
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'League-Spartan-Bold', san-serif;*/
+
+@import "blocks/base.css";
+@import "blocks/navigation.css";
+@import "blocks/header-slider.css";
+@import "blocks/header.css";

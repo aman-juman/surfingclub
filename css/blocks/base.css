@@ -1,0 +1,20 @@
+body {
+    background-image: url("../../img/bg/bg-lines.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: initial;
+    font-family: sans-serif;
+
+}
+
+.container {
+    width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+
