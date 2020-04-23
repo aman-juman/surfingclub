@@ -1,0 +1,117 @@
+.article {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.article--odd {
+    flex-direction: row-reverse;
+}
+
+.article__desc {
+    width: 462px;
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-top: 80px;
+}
+
+.article--odd .article__desc {
+    width: 350px;
+    flex: 0 0 350px;
+    padding-left: 75px;
+    padding-right: 105px;
+}
+
+.article__title {
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0.42px;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.article__title:before {
+    content: attr(data-number);
+    color: #f9f9f9;
+    font-family: 'League-Spartan-Bold', san-serif;
+    font-size: 130px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 13px;
+
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: -50px;
+}
+
+.article__title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 23px;
+    height: 2px;
+    background-color: #5da8ef;
+
+}
+
+.article__text {
+    margin-bottom: 45px;
+    color: #616161;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+}
+
+.article__preview {
+    width: 762px;
+    position: relative;
+    flex: 0 0 762px;
+}
+/**/
+.article--odd .article__preview {
+    width: 490px;
+    flex: 0 0 490px;
+}
+
+
+.article__preview-desc {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -30px;
+    top: 0;
+}
+
+/**/
+.article--odd .article__preview-desc {
+    left: -30px;
+    right: auto;
+}
+
+
+
+
+.article__preview-desc-content {
+    opacity: 0.2;
+    color: #0b0c11;
+    font-family: "League Spartan";
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+
+    transform: rotate(-90deg) translate(-100%, 0);
+    transform-origin: left top;
+}

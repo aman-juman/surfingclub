@@ -4,6 +4,7 @@ body {
     background-position: center;
     background-size: initial;
     font-family: sans-serif;
+    padding-bottom: 500px;
 
 }
 
@@ -17,4 +18,61 @@ body {
     position: relative;
 }
 
+.read-more-link {
+    color: #333333;
+    font-family: 'League-Spartan-Bold', san-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.read-more-link:after {
+    content: "";
+    height: 2px;
+    background-color: #5da8ef;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.title {
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.42px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    display: block;
+    color: #5da8ef;
+    font-family: 'League-Spartan-Bold', san-serif;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.desc-text {
+    opacity: 0.65;
+    color: #616161;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+}
 
