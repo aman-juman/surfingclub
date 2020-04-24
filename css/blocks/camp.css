@@ -1,0 +1,51 @@
+.camp {
+    min-height: 475px;
+    position: relative;
+    margin-top: 75px;
+}
+
+.camp__img {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.camp__desc {
+    width: 390px;
+    margin-top: 100px;
+    margin-right: 160px;
+
+    /*width: 50%;*/
+    /*padding-top: 100px;*/
+    /*padding-left: 44px;*/
+}
+
+.camp__label {
+    opacity: 0.27;
+    color: #0b0c11;
+    font-family: 'League-Spartan-Bold', san-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.58px;
+}
+
+.camp__address {
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.44;
+    letter-spacing: 0.32px;
+    margin-bottom: 60px;
+    margin-top: 55px;
+    padding-left: 48px;
+}
+

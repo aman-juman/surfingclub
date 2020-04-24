@@ -88,15 +88,19 @@
     right: -30px;
     top: 0;
 }
+@media (max-width: 1400px) {
+    .article__preview-desc {
+        right: 30px;
+        top: 30px;
+    }
+}
+
 
 /**/
 .article--odd .article__preview-desc {
     left: -30px;
     right: auto;
 }
-
-
-
 
 .article__preview-desc-content {
     opacity: 0.2;
@@ -115,3 +119,4 @@
     transform: rotate(-90deg) translate(-100%, 0);
     transform-origin: left top;
 }
+

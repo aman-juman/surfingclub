@@ -14,6 +14,11 @@ body {
     margin-right: auto;
 }
 
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .relative {
     position: relative;
 }
@@ -75,4 +80,6 @@ body {
     line-height: 24px;
     letter-spacing: 0.35px;
 }
+
+
 
