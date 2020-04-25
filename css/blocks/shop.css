@@ -18,11 +18,19 @@
     background-position: center;
     background-size: cover;
 
-
-
 }
 
+.shop-slider-wrapper {
+    height: 565px;
+    margin-bottom: 50px;
+    position: relative;
 
+}
+.shop-slider-special-holder {
+    position: absolute;
+    left: 0;
+    right: -85px;
+}
 
 
 .shop-slider {
@@ -32,10 +40,41 @@
     justify-content: space-between;
 }
 
+.shopSlider-controls {
+    position: relative;
+}
+
+.shopSlider-left {
+    position: absolute;
+    width: 40px;
+    height: 48px;
+    padding: 15px;
+    left: -70px;
+    bottom: calc(150px + 80px);
+    z-index: 9;
+    cursor: pointer;
+    transform: translate(-100%, -100%);
+}
+
+.shopSlider-right {
+    position: absolute;
+    width: 40px;
+    height: 48px;
+    padding: 15px;
+    right: -70px;
+    bottom: calc(150px + 80px);
+    z-index: 9;
+    cursor: pointer;
+    transform: translate(100%, -100%);
+
+}
+
+
 .board {
     position: relative;
-    width: 350px;
+    width: 450px;
     height: 435px;
+    margin-top: 120px;
 }
 
 .board__img-holder {
