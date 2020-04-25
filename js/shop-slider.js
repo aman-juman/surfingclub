@@ -4,6 +4,7 @@ $(document).ready(function(){
         items: 3,
         loop: true,
         dots: false,
+        margin: 2,
         smartSpeed: 500,
         autoplay: true,
     });
