@@ -115,26 +115,38 @@
                     </div>
                     <div class="slide-item__img slide-item__img--bg-1"></div>
                 </div>
+                <div class="container slide-item">
+                    <div class="slide-item__desc">
+                        <h2 class="slide-item__heading">
+                            <span>Your</span>
+                            Beautiful Escape
+                        </h2>
+
+                        <div class="slide-item__text">
+                            <p>
+                                One of the greatest things about the sport of surfing is that you need only three things: your body,
+                                a surfboard, and a wave.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-item__img slide-item__img--bg-1"></div>
+                </div>
             </div>
 
             <div class="container relative">
 <!--            Slides controls-->
                 <div class="slide-controls">
-
-                    <a class="slide-controls__left" href="#">
+                    <a id="headerSliderLeft" class="slide-controls__left" href="#">
                         <img src="img/controls/header-slider-left.svg" alt="Left">
                     </a>
-
                     <div class="slide-controls-number">
-                        <span class="slide-controls-number__active">1</span>
+                        <span class="slide-controls-number__active"></span>
                         /
-                        <span class="slide-controls-number__total">5</span>
+                        <span class="slide-controls-number__total"></span>
                     </div>
-
-                    <a class="slide-controls__right" href="#">
+                    <a id="headerSliderRight" class="slide-controls__right" href="#">
                         <img src="img/controls/header-slider-right.svg" alt="Right">
                     </a>
-
                 </div>
 <!-- Social icons-->
                 <div class="header-social-wrapper">
@@ -151,14 +163,7 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
-
-
     </header>
 
 
@@ -222,9 +227,25 @@
                 <span class="subtitle">Shop</span>
                 Surfboards
             </h2>
+       </div>
 
 
-           <div class="shop-slider">
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <div id="shopSlider" class="owl-carousel shop-slider">
+
+
 <!--               board-->
                <div class="board">
                    <div class="board__img-holder">
@@ -241,8 +262,9 @@
                        </div>
                    </div>
                </div>
-<!--               board-->
 
+
+<!--               board-->
                <div class="board">
                    <div class="board__img-holder">
                        <img class="board__img" src="img/boards/board-2.png" alt="Surfing Board">
@@ -259,6 +281,8 @@
                    </div>
                </div>
 
+
+<!--               board-->
                <div class="board">
                    <div class="board__img-holder">
                        <img class="board__img" src="img/boards/board-3.png" alt="Surfing Board">
@@ -278,13 +302,32 @@
            </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
             <div class="shop-link-wrapper">
                <a href="#" class="read-more-link">
                    Show All
                </a>
             </div>
+        </div>
 
-       </div>
+
     </section>
 
 <!--    Surf Trains-->
@@ -426,5 +469,7 @@
     <script src="jquery/jquery.min.js"></script>
     <script src="libs/owl-carousel2/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/header-slider.js"></script>
+    <script src="js/shop-slider.js"></script>
 </body>
 </html>
