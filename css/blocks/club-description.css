@@ -1,6 +1,12 @@
 .club-description {
-    padding-top: 110px;
-    padding-bottom: 95px;
+    padding-top: 55px;
+    padding-bottom: 42px;
+}
+@media(min-width: 1254px) {
+    .club-description {
+        padding-top: 110px;
+        padding-bottom: 95px;
+    }
 }
 
 .club-description-wrapper {
@@ -10,7 +16,12 @@
 }
 
 .club-description__img {
-
+    width: 70%;
+}
+@media (min-width: 1254px) {
+    .club-description__img {
+        width: auto;
+    }
 }
 
 .club-description-video {
@@ -18,6 +29,12 @@
     right: 0;
     top: 43px;
     z-index: 1;
+    width: 60%;
+}
+@media (min-width: 1254px) {
+    .club-description-video {
+        width: auto;
+    }
 }
 
 .club-description-video__control {
@@ -25,26 +42,38 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 68px;
-    height: 68px;
+    width: 34px;
+    height: 34px;
     border-radius: 60px;
     box-shadow: -2px -2px 35px rgba(0, 0, 0, 0.13);
     background-color: #5da8ef;
 }
+@media (min-width: 1254px) {
+    .club-description-video__control {
+        width: 68px;
+        height: 68px;
+    }
+}
 .club-description-video__control img {
-    position: absolute;
-    top: 50%;
+    width: 35%;
+    transform: translate(100%, 70%);
     left: 50%;
-    transform: translate(-35%, -50%);
+    top: 50%;
+}
+@media (min-width: 1254px) {
+    .club-description-video__control img {
+        width: auto;
+        transform: translate(190%, 150%);
 
+    }
 }
 
 
 .club-description__text {
-    width: 340px;
-    margin-bottom: 45px;
-    margin-top: 60px;
-    margin-left: 115px;
+    margin-bottom: 0px;
+    margin-top: 90px;
+    max-width: 450px;
+
     opacity: 0.65;
     color: #616161;
     font-family: 'Poppins', sans-serif;
@@ -53,8 +82,27 @@
     line-height: 24px;
     letter-spacing: 0.35px;
 }
+@media (min-width: 850px) and (max-width: 1254px){
+    .club-description__text {
+        max-width: 300px;
+    }
+}
+@media (min-width: 1254px) {
+    .club-description__text {
+        width: 340px;
+        margin-bottom: 45px;
+        margin-top: 60px;
+        margin-left: 115px;
+    }
+}
 
 .club-description__link {
-    margin-left: 115px;
+    /*text-align: center;*/
+}
+@media(min-width: 960px) {
+    .club-description__link {
+        margin-left: 115px;
+        /*text-align: left;*/
+    }
 }
 

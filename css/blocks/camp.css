@@ -1,11 +1,16 @@
 .camp {
-    min-height: 475px;
+    min-height: calc(475px/2);
     position: relative;
     margin-top: 75px;
 }
+@media (min-width: 768px) {
+    .camp {
+        min-height: 475px;
+    }
+}
 
 .camp__img {
-    width: 50%;
+    width: 20%;
     position: absolute;
     left: 0;
     top: 0;
@@ -15,15 +20,49 @@
     background-position: center;
     background-size: cover;
 }
+@media (min-width: 400px) {
+    .camp__img {
+        width: 30%;
+    }
+}
+@media (min-width: 500px) {
+    .camp__img {
+        width: 40%;
+    }
+}
+@media (min-width: 768px) {
+    .camp__img {
+        width: 50%;
+    }
+}
 
 .camp__desc {
-    width: 390px;
-    margin-top: 100px;
-    margin-right: 160px;
+    /*width: 390px;*/
+    /*margin-top: 100px;*/
+    /*margin-right: 160px;*/
 
-    /*width: 50%;*/
-    /*padding-top: 100px;*/
-    /*padding-left: 44px;*/
+    width: 80%;
+    padding-top: calc(100px/2);
+    padding-left: calc(44px/2);
+    padding-bottom: calc(100px/2);
+}
+@media (min-width: 400px) {
+    .camp__desc {
+        width: 70%;
+    }
+}
+@media (min-width: 500px) {
+    .camp__desc {
+        width: 60%;
+    }
+}
+@media (min-width: 768px) {
+    .camp__desc {
+        width: 50%;
+        padding-top: 100px;
+        padding-left: 44px;
+        padding-bottom: 0;
+    }
 }
 
 .camp__label {
@@ -35,17 +74,33 @@
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 5.58px;
+    padding-left: 15px;
+}
+.camp-read-more__link {
+    padding-left: 15px;
 }
 
 .camp__address {
     color: #333333;
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.44;
     letter-spacing: 0.32px;
-    margin-bottom: 60px;
-    margin-top: 55px;
-    padding-left: 48px;
+    margin-bottom: calc(60px/2);
+    margin-top: calc(60px/2);
+    padding-left: 0;
 }
-
+@media (min-width: 400px) {
+    .camp__address {
+        font-size: 26px;
+    }
+}
+@media (min-width: 768px) {
+    .camp__address {
+        font-size: 32px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-left: 48px;
+    }
+}

@@ -1,51 +1,101 @@
 .article {
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: calc(60px/2);
+    padding-bottom: calc(60px/2);
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+    .article {
+        flex-direction: row;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .article--odd {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+}
+@media(min-width: 768px) {
+    .article--odd {
+        flex-direction: row-reverse;
+    }
 }
 
 .article__desc {
-    width: 462px;
-    padding-left: 70px;
-    padding-right: 50px;
-    padding-top: 80px;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+}
+@media (min-width: 768px) {
+    .article__desc {
+        width: 462px;
+        padding-left: 70px;
+        padding-right: 50px;
+        padding-top: 80px;
+    }
 }
 
 .article--odd .article__desc {
-    width: 350px;
-    flex: 0 0 350px;
-    padding-left: 75px;
-    padding-right: 105px;
+    width: 100%;
 }
+@media (min-width: 768px) {
+    .article--odd .article__desc {
+        padding-left: 15px;
+    }
+}
+@media (min-width: 1254px) {
+    .article--odd .article__desc {
+        width: 515px;
+        flex: 0 0 515px;
+        padding-left: 75px;
+        padding-right: 105px;
+    }
+}
+/*.article--odd .article__desc {*/
+/*    width: 350px;*/
+/*    flex: 0 0 350px;*/
+/*    padding-left: 75px;*/
+/*    padding-right: 105px;*/
+/*}*/
 
 .article__title {
     color: #333333;
     font-family: 'Playfair Display', serif;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
-    line-height: 66px;
+    line-height: 1.57;
     letter-spacing: 0.42px;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
     position: relative;
+}
+@media (min-width: 1254px) {
+    .article__title {
+        font-size: 42px;
+        margin-bottom: 45px;
+    }
 }
 
 .article__title:before {
     content: attr(data-number);
     color: #f9f9f9;
     font-family: 'League-Spartan-Bold', san-serif;
-    font-size: 130px;
+    font-size: 70px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 13px;
 
     position: absolute;
     z-index: -1;
-    left: 0;
-    top: -50px;
+    left: -5px;
+    top: -17px;
+}
+@media(min-width: 1254px) {
+    .article__title:before {
+        font-size: 130px;
+        left: 0;
+        top: -50px;
+    }
 }
 
 .article__title:after {
@@ -60,7 +110,7 @@
 }
 
 .article__text {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     color: #616161;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -68,16 +118,38 @@
     line-height: 24px;
     letter-spacing: 0.35px;
 }
+@media (min-width: 1254px) {
+    .article__text {
+        margin-bottom: 45px;
+    }
+}
 
 .article__preview {
-    width: 762px;
+    width: 100%;
     position: relative;
-    flex: 0 0 762px;
+    margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+    .article__preview {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+}
+@media (min-width: 1254px) {
+    .article__preview {
+        width: 762px;
+        flex: 0 0 762px;
+    }
 }
 /**/
 .article--odd .article__preview {
-    width: 490px;
-    flex: 0 0 490px;
+    width: 100%;
+}
+@media (min-width: 1254px) {
+    .article--odd .article__preview {
+        width: 490px;
+        flex: 0 0 490px;
+    }
 }
 
 
@@ -98,9 +170,16 @@
 
 /**/
 .article--odd .article__preview-desc {
-    left: -30px;
-    right: auto;
+    left: 30px;
+    top: 30px;
 }
+@media (min-width: 1254px) {
+    .article--odd .article__preview-desc {
+        left: -30px;
+        top: 0;
+    }
+}
+
 
 .article__preview-desc-content {
     opacity: 0.2;

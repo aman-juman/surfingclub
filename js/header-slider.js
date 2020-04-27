@@ -11,7 +11,7 @@ $(document).ready(function(){
         // loop: true,
         dots: false,
         smartSpeed: 2000,
-        autoplay: true,
+        // autoplay: true,
     });
 
     $('#headerSliderLeft').click(function() {
